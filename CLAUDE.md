@@ -16,6 +16,7 @@ Shivani is a non-technical user. Explain what you're doing and why in plain lang
 - **Language:** TypeScript
 - **Styling:** Tailwind CSS v4
 - **Linting:** ESLint with React, React Hooks, and Next.js plugins
+- **Testing:** Vitest + React Testing Library
 - **Deployment:** GitHub Actions → GitHub Pages (see `.github/workflows/deploy.yml`)
 
 ## Commands
@@ -23,14 +24,16 @@ Shivani is a non-technical user. Explain what you're doing and why in plain lang
 - `npm run dev` — local dev server
 - `npm run build` — production build (outputs to `out/`)
 - `npm run lint` — run ESLint
+- `npm run test` — run tests
 
 ## Pre-commit checklist
 
 Before pushing changes:
 
-1. `npm run lint` — fix any errors
-2. `npm run build` — confirm the site builds successfully
-3. Review your changes make sense (`git diff`)
+1. `npm run test` — all tests must pass
+2. `npm run lint` — fix any errors
+3. `npm run build` — confirm the site builds successfully
+4. Review your changes make sense (`git diff`)
 
 ## Git workflow
 
@@ -47,3 +50,4 @@ Before pushing changes:
 - Put images and static assets in `public/`
 - Use Tailwind utility classes for styling — avoid custom CSS unless necessary
 - All images must have alt text for accessibility
+- Add tests for new components in `__tests__/` directories alongside the code
