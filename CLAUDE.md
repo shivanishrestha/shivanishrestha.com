@@ -51,6 +51,7 @@ Run in this order (fastest feedback first). All must pass before pushing.
 1. Agent creates PR from feature branch
 2. Shivani reviews and leaves comments on GitHub
 3. On "resolve comments": read all PR comments, address each one, mark resolved when fixed, and flag anything ambiguous or unaddressable in the reply
+4. On "merge it": merge the PR (auto-deploys to production)
 
 ## Code guidelines
 
